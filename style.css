@@ -1,0 +1,73 @@
+h1 {
+    text-align: center;
+}
+
+#black {
+    background-color: black;
+    color: white;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p {
+    column-count: 2;
+    column-gap: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 10px 1px rgb(130, 130, 130);
+    padding: 10px;
+    margin: 5px;
+    /* background-color: white; */
+    transition: transform .5s
+}
+
+.card-title {
+    /* column-count: 2;
+    column-gap: 200px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: lightgrey;
+    padding: 5px
+}
+
+.card-title>.button {
+    padding: 5px;
+}
+
+.card-title>.button:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.card-body {
+    font-size: medium;
+}
+
+.card-body>#dogImg1>img, .card-body>#dogImg2>img {
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    z-index: 1;
+}
